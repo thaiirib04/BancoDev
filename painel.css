@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #6a4c93, #3c2a6a);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  margin-top: 40px;
+  width: 320px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+input {
+  width: 93.5%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 150px;
+  
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+
+.depositar {
+  background: #2ecc71;
+}
+
+.pix {
+  background: #e74c3c;
+}
+
+.historico {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}

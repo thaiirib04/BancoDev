@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <h3>DevBanco</h3>
+            <p>Olá, Aluno investidor!</p>
+
+            <h2>💳 Seu Saldo</h2>
+            <h1 id="saldo">R$ 0,00</h1>
+
+            <input type="number" id="valor" placeholder="R$ 0,00">
+
+            <button class="depositar" onclick="depositar()">Depositar</button>
+            <button class="pix" onclick="pagarPix()">Pagar PIX</button>
+        </div>
+        <div class="historico">
+        <h3>Atividade Recente</h3>
+        <ul id="lista"></ul>
+        </div>
+    </div>
+
+    
+
+    <script src="painel.js"></script>
+</body>
+</html>
