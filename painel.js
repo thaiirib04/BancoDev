@@ -1,8 +1,9 @@
+
 // Recupera saldo
 let saldo = parseFloat(localStorage.getItem("saldo")) || 0;
 
 // Recupera histórico ou cria vazio
-let historico = JSON.parse(localStorage.getItem("historico")) || [];
+let historico = JSON.parse(sessionStorage.getItem("historico")) || [];
 
 function atualizarTela() {
   document.getElementById("saldo").innerText = "R$ " + saldo.toFixed(2).replace(".", ",");
@@ -47,7 +48,7 @@ function pagarPix() {
 
 function salvar() {
   localStorage.setItem("saldo", saldo);
-  localStorage.setItem("historico", JSON.stringify(historico));
+  sessionStorage.setItem("historico", JSON.stringify(historico));
 
   document.getElementById("valor").value = "";
   atualizarTela();
